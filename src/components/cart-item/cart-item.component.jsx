@@ -6,10 +6,10 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
   <div className="cart-item">
     <img src={imageUrl} alt="item" />
     <div className="item-details">
-      <spam className="name">{name}</spam>
-      <spam className="price">
+      <span className="name">{name}</span>
+      <span className="price">
         {quantity} x ${price}
-      </spam>
+      </span>
     </div>
   </div>
 );
